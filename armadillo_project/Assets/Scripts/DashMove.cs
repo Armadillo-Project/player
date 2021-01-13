@@ -132,7 +132,10 @@ public class DashMove : MonoBehaviour
     {
 
         isDie = true;
-        //버튼 비활성화
+        HpBar.gameObject.SetActive(false);
+        Destroy(gameObject);
+
+
     }
 
     //탄환과 충돌 판정
